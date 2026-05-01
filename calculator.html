@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>交通意外儲蓄單身保險｜方案試算</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-wrap">
+      <div class="logo">單行守護保險</div>
+      <nav>
+        <a href="index.html">首頁</a>
+        <a href="product.html">商品介紹</a>
+        <a href="calculator.html" class="active">方案試算</a>
+        <a href="about.html">關於我們</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="container">
+      <h1 class="page-title">方案試算</h1>
+
+      <section class="content-block">
+        <p class="hint">
+          請選擇你的年齡與婚姻狀態，系統會顯示適合的保障方向。
+        </p>
+
+        <div class="form-box">
+          <label for="age">年齡</label>
+          <input type="number" id="age" min="18" max="100" placeholder="請輸入年齡">
+
+          <label for="marital">婚姻狀態</label>
+          <select id="marital">
+            <option value="">請選擇</option>
+            <option value="single">單身</option>
+            <option value="married">已婚</option>
+          </select>
+
+          <button class="btn" onclick="showPlan()">查看方案</button>
+        </div>
+      </section>
+
+      <section class="content-block">
+        <div id="resultBox" class="result-box">
+          請輸入資料後按下「查看方案」。
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-text">
+      交通意外儲蓄單身保險｜方案試算
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
